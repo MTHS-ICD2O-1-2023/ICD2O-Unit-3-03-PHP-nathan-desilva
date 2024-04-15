@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>Volume of a Triangle, in PHP</title>
+  <title>Volume of a Pyramid, in PHP</title>
 </head>
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -28,31 +28,34 @@
       <div class="right-image">
         <img src="./images/pyramid (1).png" alt="pyramid" width="250" />
       </div>
-      <h3>Formula
-        <br />
-        <br ?>
-        
-      </h3>
-      <br />
-      <div class="page-content">Please enter integers for dimensions:</div>
       <div class="page-content-php">
-        <br />
-        <form action="answer.php" method="POST">
-          Radius:
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="radius">
-            <label class="mdl-textfield__label" for="radius">Enter a number ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
+        <div name="volume-of-pyramid">
+          <div class="mdl-layout__header-row">
+            <br />
+            <div class="mdl-layout__content">
+            </div>
+            <div class="mdl-layout__left">
+              <?php
+
+              // input
+              $length = $_POST["length"];
+              $width = $_POST["width"];
+              $height = $_POST["height"];
+
+              // process
+              $volume = ($length * $width * $height) / 3;
+
+              // output
+              echo "If the length is " . $length . " and the width is " . $width . " and the height is " . $height . ". ";
+              echo "<br />";
+              echo "<br />";
+              echo "Then the Volume is: " . round($volume, 2) . " mm³";
+              echo "<br />";
+
+              ?>
+            </div>
           </div>
-          mm³
-          <br />
-          <br />
-          <!-- Accent-colored raised button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-            Calculate
-          </button>
-        </form>
-      </div>
+        </div>
     </main>
   </div>
 </body>
