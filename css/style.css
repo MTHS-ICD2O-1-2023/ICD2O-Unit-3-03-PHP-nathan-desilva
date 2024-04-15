@@ -20,6 +20,12 @@
   padding-top: 20pt;
 }
 
+.mdl-layout__left {
+  padding-right: 600pt;
+  padding-top: 20pt;
+  font-size: 1.5rem;
+}
+
 .mdl-textfield__error {
   color: #fff;
 }
