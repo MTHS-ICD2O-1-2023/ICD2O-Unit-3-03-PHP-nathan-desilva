@@ -21,12 +21,12 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Volume of a Pyramid, in PHP</span>
+        <span class="mdl-layout-title">Volume of a Sphere, in PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/pyramid (1).png" alt="pyramid" width="250" />
+        <img src="./images/sphere.png" alt="sphere" width="250" />
       </div>
       <h3>Formula
         <br />
