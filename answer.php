@@ -38,10 +38,9 @@
 
               // input
               $radius = $_POST["radius"];
-              $pi = M_PI;
 
               // process
-              $volume = (4 / 3) * $pi * round($radius, 3);
+              $volume = (4 / 3) * M_PI * pow($radius, 3);
 
               // output
               echo "If the radius is " . round($radius, 2) . ". ";
